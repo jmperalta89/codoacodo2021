@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="STYLESHEET" href="CSS/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con VUE</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<header id="header">  </header>
+
+<body>
+<div id="app" class="PRUEBA">
+                <div class="product">
+                                
+                                <div class="product-info"> 
+                                <h1>{{ title }}</h1>
+                                <div class="product-image">
+                                        <img v-bind:src="image" v-bind:alt="altText" width='500px' height='500px'></img>
+                                        </div>
+                                <p v-if="inventory > 10">Con stock</p>
+                                <p v-else-if="inventory <=10 && inventory">Últimas unidades</p>
+                                <p v-else>Sin stock</p>
+                                <ul>
+                                <li v-for="detail in details">{{ detail }}</li>
+                                </ul>
+                                
+
+                                        <div class='color-box'
+                                        v-for='(variant, index) in variants'
+                                        :key='variant.variantId'
+                                        :style="{ backgroundColor:variant.variantColor }" 
+                                        @mouseover="cambioimagen(index)">
+                                        <!-- <div v-for="variant in variants" :key='variant.variantId'>               
+                                        <p >
+                                                {{ variant.variantColor}}</p>
+                                        </div>
+                                        -->
+                                        </div>                
+            
+
+                                        
+                                <p> Cart ({{ cart }})</p>
+                                <button @click="carrito" 
+                                :disabled="!inStock"
+                                :class="{ disabledButton: !inStock}"> Add to cart</button>
+                                </div>
+                        </div>
+                        </div>
+</div>
+
+
+<div><a class='btn' href='index.html' target=blank>Volver</a></div>
+<script src="JS/main2.js"></script>
+<footer id="footer2"></footer>
+<script src='JS/footer2.js'> </script>
+</body>
+
+
+</html>

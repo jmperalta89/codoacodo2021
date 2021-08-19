@@ -1,13 +1,41 @@
 <html lang="en">
 <head>
-<link rel="STYLESHEET" href="estilos.css">
+<link rel="STYLESHEET" href="CSS/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <script src="https://kit.fontawesome.com/dedc3957ad.js" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
-<p>Podes contactarte al 1561820000</p>
+
+<h2>Formulario para encargos</h2>
+
+        <form class='formularios' action="show_data.html" target="_blank" style="background-color:black" style='color: #ffffff;'>
+           
+            <label for="firstname">Nombre:       </label><input type="text" name="firstname" id="firstname"  placeholder="Ingrese su nombre aqui..." > <br><br>
+            <label for="lastname">Apellido:     </label><input type="text" name="lastname"  id="lastname"   placeholder="Ingrese su apellido aqui..."> <br><br>
+            <label for="street">Direccion:    </label><input type="text"  name="address"   id="address"    placeholder="Ingrese su dirección aqui..."> <br><br>
+            <label for="number">Numero:       </label><input type="number"   name="number"    id="number"     placeholder="Ingrese el numero..">
+            <br><br>
+            <label for="city">Ciudad:       </label>           <input type="text"     name="city"      id="city"     value="C.A.B.A."> <br><br>
+            <label for="zipcode">Código Postal:</label> <input type="text"     name="zipcode"   id="zipcode"  placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+            <label for="telefono">Telefono:     </label>     <input type="tel"      name="telefono"  id="telefono" placeholder="ingrese su telefono aqui ...."> <br><br>
+            <label for="mail">Mail:         </label>            <input type="email"    name="mail"      id="mail"      > <br><br>
+            <br>
+            <label for="comentarios">Comentarios:</label> <textarea name="comentarios"
+             rows="30" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+<h3 > Nuestra zona de cobertura para envíos! </h3>
+<iframe src="https://www.google.com/maps/d/embed?mid=1uGQuT4Xxsvcu9flJ9i0AH2gKT4FFuMFc" width="100%" height="45%"></iframe>
+</p>
+<a class='btn' href='index.html' target=blank>Volver</a>
 </body>
+<footer id="footer2"></footer>
+<script src='JS/footer2.js'> </script>
 </html>

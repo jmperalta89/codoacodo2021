@@ -1,0 +1,206 @@
+body
+{
+	font-size: 1.5vw;
+	font-family: cursive;
+	background-color:rgb(245, 245, 245);
+	margin: 10 px;
+	padding: 10px;
+}
+
+.color-box
+	{
+	  width:40px;
+	  height: 40px;
+	  margin-top: 5px;
+}
+
+.disabledButton{
+	background-color:grey;
+}
+
+header{
+	background-color:rgb(124, 108, 216);
+	margin: auto;
+	max-width: auto;
+	padding: auto;
+	display: auto;
+	position: relative;
+	font-size:2.5vw;
+}
+					.nav{
+						font-size: 1.5vw;
+						text-align:center;
+						line-height:40px;
+						font-weight:bold;
+						background-color:#fff;
+						color:#fff;
+						z-index: 0;
+						}
+
+
+.container {
+	align-items: center;
+	text-align:center;
+	size: 45%;
+
+}
+	 
+.section1 {
+
+	padding: 10px;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	/* aca encolumna las cajas. 
+	Valor por defecto de flex-direction: row  */
+	flex-direction: row;  /*column;*/
+	justify-content: space-around;/* center; flex-end;*/
+}
+
+.home
+{
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+.Productos_principal
+	{  
+	max-width: 200px;
+	}
+.Precio
+	{
+	  font-family: 'Indie Flower', cursive;
+	  font-size:2.5vw;
+	  width: 15%;
+	  min-width: 15%;
+	  height: 10%;
+	  text-align:center;
+	  justify-content:center;
+	  background: #d4abd8;
+	  border-radius: 30px;
+	  cursor: pointer;
+	  overflow: hidden;
+	  transition: all 1.5s ease-in-out;
+
+	}	
+
+
+h1
+{
+    color: rgb(19, 19, 20);
+    text-align: center;
+}
+
+
+.article
+{
+	max-width: 1040px;
+	margin: auto;
+	position: relative;
+}
+.formularios
+{
+    background:rgb(19, 19, 20);
+    padding: 2%;
+    color: rgb(219, 233, 219);
+	margin: auto;
+	width: 500px;
+}
+
+#btn
+{
+	width: 200px;
+	height: 100px;
+	background: #d4abd8;
+	border-radius: 5px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+  }
+  
+  
+#footer2{
+	background-color:rgb(17, 58, 170,.5);
+	color:#fff;
+	margin: auto;
+	padding: auto;
+	display: auto;
+	bottom: -1;
+	text-align: center;
+	width: 100%;
+	max-height: 200px;
+	position: relative;
+}
+
+.contactarte
+{
+	color: whitesmoke
+
+}
+
+.fondo_para_nosotros
+{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	width: 100%;
+	opacity: 15%;
+}
+.cepillos
+{
+
+max-width: 400px;
+max-height: 400px;
+
+}
+
+.foto_home
+{
+	width:100%;
+	height:100px;
+	z-index: -1;
+}
+
+.credenciales
+{
+	display: flex;
+	margin: 1.5vw;
+	padding: 1vw;
+	box-sizing: border-box;
+	flex-direction: row;  /*column;*/
+	justify-content: space-around;
+	font-family: 'Indie Flower', cursive;
+	text-align: justify;
+
+}
+
+#LA
+{
+	
+	text-align: justify;	
+
+}
+
+@media screen and (max-width: 680px) {
+	body {
+	  background-color: rgb(112, 104, 104);
+	}
+  }
+
+
+  .PRUEBA
+  {
+	display:flex;
+	justify-content: center;
+  }
+
+  .galeria
+  {
+margin: 100px;
+max-width: 700px;
+margin-left: 550px;
+
+  }
